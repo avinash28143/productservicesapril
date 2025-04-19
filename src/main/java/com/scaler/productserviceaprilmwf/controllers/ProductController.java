@@ -51,7 +51,7 @@ public class ProductController {
 
         ResponseEntity response = new ResponseEntity<>(
                 productService.addNewProduct(product),
-                HttpStatus.CREATED
+                HttpStatus.OK
         );
         return response;
     }
